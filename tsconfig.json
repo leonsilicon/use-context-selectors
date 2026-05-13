@@ -1,8 +1,9 @@
 {
-  "include": ["src/**/*.ts"],
+  "include": ["src/**/*.ts", "tests/**/*.tsx", "vite.config.ts"],
   "compilerOptions": {
+    "jsx": "react-jsx",
     "target": "esnext",
-    "lib": ["es2023"],
+    "lib": ["es2023", "DOM"],
     "moduleDetection": "force",
     "module": "nodenext",
     "moduleResolution": "nodenext",

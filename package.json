@@ -40,16 +40,20 @@
     "build": "vp pack",
     "dev": "vp pack --watch",
     "test": "vp test",
-    "check": "vp fmt --check && tsc -p tsconfig.json",
+    "check": "vp check 'src/**/*.ts' 'tests/**/*.tsx' vite.config.ts",
     "prepublishOnly": "vp run build",
     "prepare": "vp config"
   },
   "devDependencies": {
+    "@testing-library/react": "^16.3.2",
     "@types/node": "^25.6.2",
     "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
     "@typescript/native-preview": "7.0.0-dev.20260509.2",
     "bumpp": "^11.1.0",
+    "jsdom": "^29.1.1",
     "react": "^19.2.6",
+    "react-dom": "^19.2.6",
     "typescript": "^6.0.3",
     "use-context-selector": "^2.0.0",
     "vite-plus": "^0.1.20"
