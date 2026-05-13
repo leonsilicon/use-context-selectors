@@ -1,6 +1,6 @@
 {
   "name": "use-context-selectors",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Call multiple useContextSelector hooks with one tuple-typed API.",
   "keywords": [
     "context",
