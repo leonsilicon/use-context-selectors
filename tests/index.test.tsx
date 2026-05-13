@@ -1,8 +1,7 @@
 import type { ReactNode } from "react";
 import { render } from "@testing-library/react";
-import { createContext } from "use-context-selector";
 import { expect, test } from "vite-plus/test";
-import { useContextSelectors } from "../src/index.ts";
+import { createContext, useContextSelectors } from "../src/index.ts";
 
 type Store = { n: number; label: string };
 

@@ -1,6 +1,6 @@
 {
   "name": "use-context-selectors",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Call multiple useContextSelector hooks with one tuple-typed API.",
   "keywords": [
     "context",
@@ -60,7 +60,7 @@
   },
   "peerDependencies": {
     "react": ">=18.0.0",
-    "use-context-selector": ">=2.0.0"
+    "scheduler": ">=0.19.0"
   },
   "packageManager": "pnpm@11.1.1"
 }

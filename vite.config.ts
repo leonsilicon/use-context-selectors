@@ -13,6 +13,10 @@ export default defineConfig({
       tsgo: true,
     },
     exports: false,
+    deps: {
+      alwaysBundle: ["use-context-selector"],
+      onlyBundle: ["use-context-selector"],
+    },
   },
   lint: {
     options: {
