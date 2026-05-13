@@ -1,0 +1,62 @@
+{
+  "name": "use-context-selectors",
+  "version": "0.0.0",
+  "description": "Call multiple useContextSelector hooks with one tuple-typed API.",
+  "keywords": [
+    "context",
+    "hooks",
+    "react",
+    "selector",
+    "use-context-selector"
+  ],
+  "homepage": "https://github.com/leonsilicon/use-context-selectors#readme",
+  "bugs": {
+    "url": "https://github.com/leonsilicon/use-context-selectors/issues"
+  },
+  "license": "MIT",
+  "author": "Leon Silicon",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonsilicon/use-context-selectors.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs",
+      "default": "./dist/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "vp pack",
+    "dev": "vp pack --watch",
+    "test": "vp test",
+    "check": "vp fmt --check && tsc -p tsconfig.json",
+    "prepublishOnly": "vp run build",
+    "prepare": "vp config"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.2",
+    "@types/react": "^19.2.14",
+    "@typescript/native-preview": "7.0.0-dev.20260509.2",
+    "bumpp": "^11.1.0",
+    "react": "^19.2.6",
+    "typescript": "^6.0.3",
+    "use-context-selector": "^2.0.0",
+    "vite-plus": "^0.1.20"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "use-context-selector": ">=2.0.0"
+  },
+  "packageManager": "pnpm@11.1.1"
+}
